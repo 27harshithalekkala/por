@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* project */
+        body {
+            background-color: #081C29;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #0a2239;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00FFFF;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .about-me-text h1 {
+            text-align: center;
+        }
+        .highlight {
+            color: #00FFFF;
+        }
+        .portfolio-section {
+            background-color: #081C29;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+        .portfolio-section:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-section img {
+            max-width: 300px; 
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .portfolio-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .portfolio-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .portfolio-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .portfolio-section li {
+            margin: 10px 0;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #00ffff;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand ml-5" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="skill.html">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="project.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="about-me-text">
+            <h1>Project And <span class="highlight">Research Paper</span></h1>
+        </div>
+        <div class="portfolio-section">
+            <img src="candy.jpg" alt="Candy Castle">
+            <div>
+                <i class="fas fa-project-diagram icon"></i>
+                <h2>Candy Castle</h2>
+                <p>Developed a responsive candy e-commerce platform</p>
+                <ul>
+                    <li>Designed an engaging candy ordering website using HTML, CSS, and JavaScript, enhancing user interaction and satisfaction.</li>
+                    <li>Enhanced the user experience by adding functionality for ordering special gift packs and candy assortments.</li>
+                    <li>Implemented advanced search and filtering options, allowing users to find and order their favorite sweets easily.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio-section">
+            <img src="research.jpg" alt="Research Paper">
+            <div>
+                <i class="fas fa-file-alt icon"></i>
+                <h2>Early Breast Cancer Detection Using Nanoparticle Sensor And Machine Learning Algorithms</h2>
+                <p>Research <span class="highlight">Paper</span></p>
+                <ul>
+                    <li>Presented at IEEE CONIT 2024, organized by IEEE Bangalore Section, from June 21st to 23rd, 2024.</li>
+                    <li>Collaborated with a team of 3 to develop a website that can detect if a person has breast cancer or not.</li>
+                    <li>Developed a machine learning model that identifies patterns in a nanoparticle sensor database set and urine sample database set.</li>
+                    <li>Integrated the website using Flask for early breast cancer detection.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+body {
+    background-color: #081C29; /* Dark background for better contrast */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0a2239; /* Dark background for navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White text color for links */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00FFFF; /* Highlight color on hover */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: calc(100vh - 56px); /* Full viewport height minus navbar height */
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text-section h3 span {
+    color: #0ef;
+    display: inline-block;
+    transition: opacity 0.5s;
+}
+
+.glow-circle {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0,0,0,0) 60%, #13F7F8 70%, rgba(255,0,255,0.5) 80%);
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.glow-circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 30px 15px rgba(0, 255, 255, 0.5), 0 0 50px 25px rgba(255, 0, 255, 0.5);
+}
+
+.glow-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #00FFFF; /* Icon color */
+    font-size: 2rem; /* Icon size */
+}
+
+.social-icons a:hover {
+    color: #00CCCC; /* Icon hover color */
+}
+
+.btn-more-about-me {
+    background-color: #00FFFF; /* Button background color */
+    color: #0a0a0a; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 25px; /* Rounded button */
+    font-size: 1rem; /* Font size */
+}
+
+.btn-more-about-me:hover {
+    background-color: #00CCCC; /* Button hover color */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand ml-5" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="skill.html">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="project.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content container">
+        <div class="text-section">
+            <h2>Hello, It's Me</h2>
+            <h1>Harshitha L</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a web Designer with extensive experience for over 2 years.
+                <br> Expertise is to create and website design, Frontend design, and many more....</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <button class="btn-more-about-me">More About Me</button>
+        </div>
+        <div class="glow-circle">
+            <img src="harshitha.jpg" alt="Profile Picture">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
